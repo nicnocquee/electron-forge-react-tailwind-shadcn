@@ -52,6 +52,18 @@ const config: ForgeConfig = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      name: "@electron-forge/publisher-github",
+      config: {
+        repository: {
+          owner: "nicnocquee",
+          name: "electron-forge-react-tailwind-shadcn",
+        },
+        prerelease: true,
+      },
+    },
+  ],
 };
 
 export default config;
